@@ -1,0 +1,42 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(17, 17, 17, 0.746);
+}
+body{
+    background-color: rgba(218, 240, 106, 0.46);
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    /*
+    Medidas absolutas
+    cm, mm, in, px, pt, pc
+
+    Medidas relativas
+    em, ex, rem, vw, vh, %
+    16px = 1em
+    */
+    font-size: 1em;
+}
+
+main{
+    background-color: rgba(200, 200, 119, 0.667);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.446);
+    width: 500px;
+    margin: auto;
+}
+
+h1, h2{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 1px 2px 20px;
+}
+
+/*font-style -> font-weight -> font-size -> font-family
+font: italic bolder 3em 'Work Sans', sans-serif;*/
+
+footer{
+    text-align: left;
+    padding: 1px;
+    font-size: 10px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tag</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 0, 0, 0.93);
+            color: rgb(0, 0, 0);
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 1px 1px 10px white;
+        }
+        main{
+            background-color: white;
+            margin: 20px;
+            text-align: justify;
+            padding: 10px;
+            border-radius: 15px 1.5px;
+            box-shadow: 1px 1px 10px white;
+        }
+        article{
+            background-color: lightblue;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        article > aside{
+            background-color: rgb(85, 116, 126);
+            color: rgb(255, 255, 255);
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        footer{
+            background-color: white;
+            color: black;
+            margin: 0px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 10px;
+            padding: 4px;
+            box-shadow: 1px 1px 10px white;
+        }
+        nav{
+            background-color: lightgrey;
+            padding: 5px;
+            border: solid black;
+            border-radius: 15px;
+            box-shadow: 1px 1px 10px black;
+        }
+        nav > a{
+            text-decoration: none;
+            font-weight: bolder;
+            color: black;
+            margin-right: 50px;
+            padding: 10px;
+        }
+        nav > a:hover{
+            text-shadow: 1px 1px 10px rgb(0, 229, 255);
+        }
+        footer > p{
+            margin: 0px;
+        }
+        section{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>    
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+            <article>
+            <h2>Assuntos sobre o Brasil</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perspiciatis itaque dignissimos? Nemo, ab? Esse omnis iusto quis blanditiis voluptatem, ea deleniti asperiores libero tempore sit aut recusandae id nam.</p>
+            <aside>Artigo escrito por José da Silva</aside>
+        </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae corrupti tempore vero, ratione officia placeat in voluptatum quo pariatur iusto accusamus praesentium esse quisquam sequi nemo assumenda neque fugiat molestiae.</p>
+                <aside>
+                    Artigo escrito por José da Silva
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Rain - 2024</p>
+    </footer>
+</body>
+</html>

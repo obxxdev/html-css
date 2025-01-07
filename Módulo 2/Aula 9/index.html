@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        h1{
+            letter-spacing: 5px;
+        animation: colorRotate 2s linear 0s infinite;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            background-color: rgb(62, 62, 62);
+        }
+        div.principal{
+            display: inline-block;
+            background-color: gray;
+            height: 200px;
+            border: 3px solid black;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+        }
+
+        div#mouseaqui > p{
+            display: none;
+        }
+
+        div#mouseaqui:hover > p{
+            display: block;
+            color: white;
+            background-color: red;
+            width: 350px;
+            padding: 10px;
+            border-radius: 20px;
+            border: 3px solid rgb(0, 13, 129);
+            box-shadow: 2px 2px 10px rgb(0, 204, 255);
+            
+        }
+
+        div#mouseaqui:hover{
+            color: red;
+            text-shadow: 1px 1px 10px black;
+        }
+
+        div.principal:hover{
+            background-color: yellow;
+            box-shadow: 2px 2px 20px rgb(9, 255, 0);
+        }
+
+    @keyframes colorRotate {
+    from {
+    color: #6666ff;
+    }
+    10% {
+    color: #0099ff;
+    }
+    50% {
+    color: #00ff00;
+    }
+    75% {
+    color: #ff3399;
+    }
+    100% {
+    color: #6666ff;
+    }
+}
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div id="mouseaqui">
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <div class="principal" id="d1">01</div>
+    <div class="principal" id="d2">02</div>
+    <div class="principal" id="d3">03</div>
+</body>
+</html>

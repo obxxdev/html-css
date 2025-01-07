@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/*
+em HMTML é id = em CSS é #
+em HTML é class = em CSS é .
+*/
+
+body{
+    background-color: rgba(0, 0, 0, 0.911);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+main{
+    background-color: beige;
+    border-radius: 15px;
+    padding: 10px;
+    width: 1200px;
+    box-shadow: 1px 2px 20px rgb(241, 241, 23);
+    margin: 30px 20px 20px 200px;
+
+}
+
+h1{
+    color: rgb(196, 8, 64);
+    text-shadow: 1px 1px 30px;
+}
+
+#principal{
+    color: rgb(212, 9, 131);
+    text-align: center;
+    background-color: rgba(243, 214, 107, 0.188);
+    border-radius: 20px;
+    box-shadow: 1px 2px 10px rgb(143, 119, 0);
+    text-shadow: 1px 1px 20px;
+    width: 600px;
+    margin: auto;
+}
+
+h2{
+    color: rgb(251, 3, 3);
+    text-shadow: 1px 1px 30px;
+}
+
+p{
+    color: black;
+    text-shadow: 1px 1px 9px;
+}
+
+.basico{
+    color: rgb(14, 142, 136);
+}
+
+.intermediario{
+    color: blue;
+}
+
+.avançado{
+    color: blueviolet;
+}
+
+.destaque{
+    color: rgb(17, 164, 12);
+}
+
+#tonyboy{
+    border-radius: 30px;
+    margin: 30px 20px 20px 500px;
+    box-shadow: 2px 2px 20px yellow;
+}
