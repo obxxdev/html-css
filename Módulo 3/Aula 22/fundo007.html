@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        section#container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            max-width: 1000px;
+            min-width: 320px;
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0.344);
+            padding: 20px;
+            border-radius: 10px;
+            position: relative; /* Todos os boxs são relativos, realmente não precisa indicar */
+        }
+        article#conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-color: lightblue;
+
+            position: absolute;
+            height: 200px;
+            padding: 10px;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            max-width: 500px;
+            min-width: 320px;
+
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
