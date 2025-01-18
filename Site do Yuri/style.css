@@ -32,6 +32,7 @@ footer{
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
+    margin-top: 0px;
 }
 
 footer p a{
@@ -48,10 +49,23 @@ footer p a:hover{
     font-size: 17px;
 }
 
-iframe{
+#container #iframe1{
     margin: 20px;
     border-radius: 15px;
+    border: 5px solid #373c79;
+    width: 30vw;
+    height: 50vh;
+    display: inline-block;
+}
 
+#container #iframe2{
+    width: 30vw;
+    height: 50vh;
+    position: absolute;
+    margin: 20px;
+    border-radius: 15px;
+    border: 5px solid #373c79;
+    left: 67.6%;
 }
 
 header{
@@ -64,11 +78,14 @@ header{
 p#direitadoiframe{
     margin: 20px;
     padding: 10px;
+    border: 5px solid #373c79;
     background-color: #301c41;
-    border-radius: 10px;
-    width: 780px;
+    border-radius: 15px;
     display: inline-block;
     position: absolute;
+    width: 30vw;
+    height: 48vh;
+    margin-left: 50px;
 }
 
 div#container{
@@ -76,6 +93,34 @@ div#container{
     margin: 10px;
     border-radius: 10px;
     position: relative;
+}
+
+div#backgroundimg{
+    background-color: #5c65c0;
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+    height: 300px;
+    padding: 20px;
+    animation: borderRotate 1s linear 0s infinite;
+    background-image: url(img123.jpeg);
+    background-position-x: 50%;
+    background-position-y: 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: rotate-border 3s infinite;
+    border: 5px solid rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+div#backgroundimg h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bolder;
+    font-size: 3em;
+    text-shadow: 1px 2px 5px black;
 }
 
 @keyframes colorRotate{
@@ -93,5 +138,23 @@ div#container{
     }
     100% {
     color: #6666ff;
+    }
+}
+
+@keyframes rotate-border {
+    0% {
+    border-color: rgba(255, 0, 0, 0.281);
+    }
+    25% {
+    border-color: rgba(0, 0, 0, 0.683);
+    }
+    50% {
+    border-color: rgba(96, 0, 0, 0.833);
+    }
+    75% {
+    border-color: rgba(0, 0, 0, 0.636);
+    }
+    100% {
+    border-color: rgba(255, 0, 0, 0.478);
     }
 }
