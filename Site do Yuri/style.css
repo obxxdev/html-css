@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #413b6b;
+    font-family: "Oswald", serif;;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    width: 100vw;
+    color: white;
+}
+
+.content{
+    flex: 1;
+}
+
+header h1{
+    text-align: center;
+    color: white;
+    margin: 30px;
+}
+
+footer{
+    background-color: #5c65c0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+footer p a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 2px 5px black;
+}
+
+footer p a:hover{
+    animation: colorRotate 1s linear 0s infinite;
+    transition-duration: 0.5s;
+    font-size: 17px;
+}
+
+iframe{
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+header{
+    background-color: #5c65c0;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+p#direitadoiframe{
+    margin: 20px;
+    padding: 10px;
+    background-color: #301c41;
+    border-radius: 10px;
+    width: 780px;
+    display: inline-block;
+    position: absolute;
+}
+
+div#container{
+    background-color: #5c65c0;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+@keyframes colorRotate{
+    from {
+    color: #6666ff;
+    }
+    10% {
+    color: #0099ff;
+    }
+    50% {
+    color: #00ff00;
+    }
+    75% {
+    color: #ff3399;
+    }
+    100% {
+    color: #6666ff;
+    }
+}
