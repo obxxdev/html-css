@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!-- Link para o CSS do intl-tel-input -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.10/css/intlTelInput.css">
+    <!-- Link para o script do intl-tel-input -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.10/js/intlTelInput.min.js"></script>
+    <style>
+        /* Custom CSS para melhorar o layout */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        label {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .tel-input-container {
+            position: relative;
+            max-width: 400px;
+        }
+
+        .tel-input-container input{
+            padding: 20px;
+            width: 300px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.457);
+        }
+
+        div#backtest{
+            width: 77%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.164);
+            border-radius: 10px;
+            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.641);
+        }
+
+        .intl-tel-input {
+            width: 100%;
+        }
+
+        .iti-flag {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tel-input-container">
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="phone">Número de Telefone</label>
+                <div id="backtest"><input type="tel" id="phone" name="phone" placeholder="Digite seu número de telefone" /></div>
+            </p>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.10/js/intlTelInput.min.js"></script>
+    <script>
+        // Inicializar a biblioteca intl-tel-input
+        var input = document.querySelector("#phone");
+        var iti = intlTelInput(input, {
+            preferredCountries: ["br", "us", "gb", "fr", "es"], // Países preferidos
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.10/js/utils.js"
+        });
+    </script>
+</body>
+</html>
