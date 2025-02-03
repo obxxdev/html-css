@@ -1,9 +1,12 @@
 @charset "UTF-8";
+/* Configurações de Landscape */
 
 *{
     padding: 0;
     margin: 0;
 }
 
-/* Configurações de Landscape */
-
+body{
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
